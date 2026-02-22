@@ -12,6 +12,8 @@ export default function Categories() {
     saveToLocalStorage("categories", categories);
   }, [categories]);
 
+
+  // comment
   const addCategory = () => {
     if (newCategory.trim() && !categories.includes(newCategory)) {
       setCategories([...categories, newCategory]);
